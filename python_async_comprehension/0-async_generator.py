@@ -4,8 +4,8 @@ import asyncio
 import random
 
 
-async def wait_random(max_delay: int = 10) -> float:
+async def async_generator() -> Generator[float, None, None]:
     """ Write a coroutine that takes no arguments."""
-    random = random.uniform(0, max_delay)
-    await asyncio.sleep(random)
-    return random
+    for _ in range(10):
+        await asyncio.sleep(1)
+        yield random.uniform(0, 10)
