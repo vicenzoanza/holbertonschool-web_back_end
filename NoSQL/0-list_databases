@@ -1,1 +1,2 @@
-show collections
+// Show all databases
+show dbs
