@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """ task 8 """
-from pymongo import *
 
 
 def list_all(mongo_collection):
