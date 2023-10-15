@@ -3,6 +3,7 @@
 
 
 def index_range(page, page_size):
+    """ Write a function named index_range that takes two integer arguments """
     if page <= 0 or page_size <= 0:
         return (0, 0)
 
